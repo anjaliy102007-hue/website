@@ -156,3 +156,74 @@
 
 # print("Passing Students:")
 # passing_students(students)
+
+# Safe Division Calculator
+
+# try:
+#     a = float(input("Enter the first number: "))
+#     b = float(input("Enter the second number: "))
+
+#     result = a / b
+#     print("Result =", result)
+
+# except ValueError:
+#     print("Error: Please enter valid numbers.")
+
+# except ZeroDivisionError:
+#     print("Error: Division by zero is not allowed.")
+
+# try:
+#     num = float(input("Enter a number: "))
+
+#     if num < 0:
+#         raise ValueError("Negative number is not allowed.")
+
+#     print("You entered:", num)
+
+# except ValueError as e:
+#     print("Error:", e)
+
+# numbers = [10, 20, 30, 40, 50]
+
+# try:
+#     index = int(input("Enter an index (0-4): "))
+#     print("Number =", numbers[index])
+
+# except IndexError:
+#     print("Error: Invalid index.")
+
+# except ValueError:
+#     print("Error: Please enter an integer.")
+
+# student = {
+#     "name": "Rahul",
+#     "trade": "Computer",
+#     "marks": 85
+# }
+
+# try:
+#     key = input("Enter a key (name, trade, marks): ")
+#     print("Value =", student[key])
+
+# except KeyError:
+#     print("Error: Key not found in the dictionary.")
+
+# try:
+#     filename = input("Enter the filename: ")
+
+#     with open(filename, "r") as file:
+#         content = file.read()
+#         print("File contents:")
+#         print(content)
+
+# except FileNotFoundError:
+#     print("Error: File not found.")
+
+# while True:
+#     try:
+#         num = int(input("Enter an integer: "))
+#         print("Valid integer:", num)
+#         break
+
+#     except ValueError:
+#         print("Invalid input! Please enter an integer.")
